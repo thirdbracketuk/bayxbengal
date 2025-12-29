@@ -12,7 +12,7 @@ export const NeutralHighImpactHero: React.FC<Page['hero']> = ({ links, media, ri
     <div className="relative -mt-[10.4rem] flex items-center justify-center">
       {/* Content layer */}
       <div className="container mb-8 z-10 relative flex items-center justify-center">
-        <div className="max-w-[36.5rem] md:text-center text-neutral-900">
+        <div className="max-w-screen-sm md:text-center text-neutral-900">
           {richText && <RichText className="mb-6" data={richText} enableGutter={false} />}
 
           {Array.isArray(links) && links.length > 0 && (
