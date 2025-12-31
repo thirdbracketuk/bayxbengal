@@ -56,6 +56,9 @@ importers:
       '@radix-ui/react-slot':
         specifier: ^1.0.2
         version: 1.2.4(@types/react@19.2.1)(react@19.2.1)
+      '@thirdbracket/bracketui':
+        specifier: ^3.1.12
+        version: 3.1.12(autoprefixer@10.4.23(postcss@8.5.6))(postcss@8.5.6)(react-dom@19.2.1(react@19.2.1))(tailwindcss@3.4.19(tsx@4.20.6))
       class-variance-authority:
         specifier: ^0.7.0
         version: 0.7.1
@@ -1954,6 +1957,13 @@ packages:
       '@types/react-dom':
         optional: true
 
+  '@thirdbracket/bracketui@3.1.12':
+    resolution: {integrity: sha512-cfELo1awedQ7bZWyHME4ZoP/EqNbNNPjBD7WJA9B047f/VDDGr8rMWiDA77ATqfkekBmu3gl/LMeu4lnoS3WCQ==}
+    peerDependencies:
+      autoprefixer: ^10.4.17
+      postcss: ^8.4.35
+      tailwindcss: ^3.4.1
+
   '@tokenizer/token@0.3.0':
     resolution: {integrity: sha512-OvjF+z51L3ov0OyAU0duzsYuvO01PH7x4t6DJx+guahgTnBHkhJdG7soQeTSFLWN3efnHyibZ4Z8l2EuWwJN3A==}
 
@@ -2548,6 +2558,10 @@ packages:
 
   convert-source-map@2.0.0:
     resolution: {integrity: sha512-Kvp459HrV2FEJ1CAsi1Ku+MY3kasH19TFykTz2xWmMeq6bk2NU3XXvfJ+Q61m0xktWwt+1HSYf3JZsTms3aRJg==}
+
+  cookie@1.1.1:
+    resolution: {integrity: sha512-ei8Aos7ja0weRpFzJnEA9UHJ/7XQmqglbRwnf2ATjcB9Wq874VKH9kfjjirM6UhU2/E5fFYadylyhFldcqSidQ==}
+    engines: {node: '>=18'}
 
   copyfiles@2.4.1:
     resolution: {integrity: sha512-fereAvAvxDrQDOXybk3Qu3dPbOoKoysFMWtkY3mv5BsL8//OSZVL5DCLYqgRfY5cWirgRzlC+WSrxp6Bo3eNZg==}
@@ -4250,6 +4264,16 @@ packages:
       '@types/react':
         optional: true
 
+  react-router@7.11.0:
+    resolution: {integrity: sha512-uI4JkMmjbWCZc01WVP2cH7ZfSzH91JAZUDd7/nIprDgWxBV1TkkmLToFh7EbMTcMak8URFRa2YoBL/W8GWnCTQ==}
+    engines: {node: '>=20.0.0'}
+    peerDependencies:
+      react: '>=18'
+      react-dom: '>=18'
+    peerDependenciesMeta:
+      react-dom:
+        optional: true
+
   react-select@5.9.0:
     resolution: {integrity: sha512-nwRKGanVHGjdccsnzhFte/PULziueZxGD8LL2WojON78Mvnq7LdAMEtu2frrwld1fr3geixg3iiMBIc/LLAZpw==}
     peerDependencies:
@@ -4271,6 +4295,10 @@ packages:
     peerDependencies:
       react: '>=16.6.0'
       react-dom: '>=16.6.0'
+
+  react@18.3.1:
+    resolution: {integrity: sha512-wS+hAgJShR0KhEvPJArfuPVN1+Hz1t0Y6n5jLrGQbkb4urgPE/0Rve+1kMB1v/oWgHgm4WIcV+i7F2pTVj+2iQ==}
+    engines: {node: '>=0.10.0'}
 
   react@19.2.1:
     resolution: {integrity: sha512-DGrYcCWK7tvYMnWh79yrPHt+vdx9tY+1gPZa7nJQtO/p8bLTDaHp4dzwEhQB7pZ4Xe3ok4XKuEPrVuc+wlpkmw==}
@@ -4402,6 +4430,9 @@ packages:
     resolution: {integrity: sha512-SdsKMrI9TdgjdweUSR9MweHA4EJ8YxHn8DFaDisvhVlUOe4BF1tLD7GAj0lIqWVl+dPb/rExr0Btby5loQm20Q==}
     engines: {node: '>=10'}
     hasBin: true
+
+  set-cookie-parser@2.7.2:
+    resolution: {integrity: sha512-oeM1lpU/UvhTxw+g3cIfxXHyJRc/uidd3yK1P242gzHds0udQBYzs3y8j4gCCW+ZJ7ad0yctld8RYO+bdurlvw==}
 
   set-function-length@1.2.2:
     resolution: {integrity: sha512-pgRc4hJ4/sNjWCSS9AmnS40x3bNMDTknHgL5UaMBTMyJnU90EgWh1Rz+MC9eFu4BuN/UwZjKQuY/1v3rM7HMfg==}
@@ -6760,6 +6791,18 @@ snapshots:
       '@types/react': 19.2.1
       '@types/react-dom': 19.2.1(@types/react@19.2.1)
 
+  '@thirdbracket/bracketui@3.1.12(autoprefixer@10.4.23(postcss@8.5.6))(postcss@8.5.6)(react-dom@19.2.1(react@19.2.1))(tailwindcss@3.4.19(tsx@4.20.6))':
+    dependencies:
+      autoprefixer: 10.4.23(postcss@8.5.6)
+      clsx: 2.1.1
+      postcss: 8.5.6
+      react: 18.3.1
+      react-router: 7.11.0(react-dom@19.2.1(react@19.2.1))(react@18.3.1)
+      tailwind-merge: 2.6.0
+      tailwindcss: 3.4.19(tsx@4.20.6)
+    transitivePeerDependencies:
+      - react-dom
+
   '@tokenizer/token@0.3.0': {}
 
   '@tybys/wasm-util@0.10.1':
@@ -7399,6 +7442,8 @@ snapshots:
   convert-source-map@1.9.0: {}
 
   convert-source-map@2.0.0: {}
+
+  cookie@1.1.1: {}
 
   copyfiles@2.4.1:
     dependencies:
@@ -9355,6 +9400,14 @@ snapshots:
     optionalDependencies:
       '@types/react': 19.2.1
 
+  react-router@7.11.0(react-dom@19.2.1(react@19.2.1))(react@18.3.1):
+    dependencies:
+      cookie: 1.1.1
+      react: 18.3.1
+      set-cookie-parser: 2.7.2
+    optionalDependencies:
+      react-dom: 19.2.1(react@19.2.1)
+
   react-select@5.9.0(@types/react@19.2.1)(react-dom@19.2.1(react@19.2.1))(react@19.2.1):
     dependencies:
       '@babel/runtime': 7.28.4
@@ -9388,6 +9441,10 @@ snapshots:
       prop-types: 15.8.1
       react: 19.2.1
       react-dom: 19.2.1(react@19.2.1)
+
+  react@18.3.1:
+    dependencies:
+      loose-envify: 1.4.0
 
   react@19.2.1: {}
 
@@ -9551,6 +9608,8 @@ snapshots:
   semver@6.3.1: {}
 
   semver@7.7.3: {}
+
+  set-cookie-parser@2.7.2: {}
 
   set-function-length@1.2.2:
     dependencies:

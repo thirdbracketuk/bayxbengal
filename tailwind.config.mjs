@@ -8,6 +8,8 @@ const config = {
     './components/**/*.{ts,tsx}',
     './app/**/*.{ts,tsx}',
     './src/**/*.{ts,tsx}',
+    './node_modules/@thirdbracket/bracketui/**/*.{js,ts,jsx,tsx}',
+    './node_modules/@thirdbracket/bracketui/src/**/*.{js,ts,jsx,tsx}',
   ],
   darkMode: ['selector', '[data-theme="dark"]'],
   plugins: [tailwindcssAnimate, typography],
