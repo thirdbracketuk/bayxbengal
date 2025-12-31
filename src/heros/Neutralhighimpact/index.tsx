@@ -9,9 +9,9 @@ import RichText from '@/components/RichText'
 
 export const NeutralHighImpactHero: React.FC<Page['hero']> = ({ links, media, richText }) => {
   return (
-    <div className="relative  flex items-center justify-center">
+    <div className="relative  flex items-center justify-center md:pt-16 pt-0">
       {/* Content layer */}
-      <div className="container  z-10 relative flex items-center justify-center">
+      <div className="container mb-8 z-10 relative flex items-center justify-center">
         <div className="max-w-screen-sm md:text-center text-neutral-900">
           {richText && <RichText className="mb-6" data={richText} enableGutter={false} />}
 
