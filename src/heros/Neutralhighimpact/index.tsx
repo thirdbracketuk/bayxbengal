@@ -9,10 +9,10 @@ import RichText from '@/components/RichText'
 
 export const NeutralHighImpactHero: React.FC<Page['hero']> = ({ links, media, richText }) => {
   return (
-    <div className="relative  flex items-center justify-center md:pt-16 pt-0">
+    <div className="relative  flex items-center justify-center ">
       {/* Content layer */}
       <div className="container mb-8 z-10 relative flex items-center justify-center">
-        <div className="max-w-screen-sm md:text-center text-neutral-900">
+        <div className="max-w-screen-sm md:text-center ">
           {richText && <RichText className="mb-6" data={richText} enableGutter={false} />}
 
           {Array.isArray(links) && links.length > 0 && (
@@ -28,9 +28,9 @@ export const NeutralHighImpactHero: React.FC<Page['hero']> = ({ links, media, ri
       </div>
 
       {/* Media layer */}
-      <div className="min-h-[80vh] select-none">
+      <div className="min-h-[80vh] md:min-h-[100vh]  select-none">
         {media && typeof media === 'object' && (
-          <Media fill imgClassName="-z-10 object-cover" priority resource={media} />
+          <Media fill imgClassName="-z-10 object-cover pb-16" priority resource={media} />
         )}
       </div>
     </div>
