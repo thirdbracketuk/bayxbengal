@@ -56,8 +56,8 @@ export const HeaderClient: React.FC<HeaderClientProps> = ({ data }) => {
     >
       <Navbar
         theme={{
-          background: 'bg-white dark:bg-black',
-          mobileMenu: 'bg-white dark:bg-black',
+          background: 'bg-transparent',
+          mobileMenu: 'bg-transparent',
         }}
       >
         <div className="flex items-center gap-6">
