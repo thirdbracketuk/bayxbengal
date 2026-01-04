@@ -9,7 +9,7 @@ import RichText from '@/components/RichText'
 
 export const NeutralHighImpactHero: React.FC<Page['hero']> = ({ links, media, richText }) => {
   return (
-    <div className="relative  flex items-center justify-center ">
+    <div className="relative  flex items-center">
       {/* Content layer */}
       <div className="container mb-8 z-10 relative flex items-center justify-center">
         <div className="max-w-[36.5rem] md:text-center ">
@@ -28,7 +28,7 @@ export const NeutralHighImpactHero: React.FC<Page['hero']> = ({ links, media, ri
       </div>
 
       {/* Media layer */}
-      <div className="min-h-[80vh] md:min-h-[100vh]  select-none">
+      <div className="min-h-[80svh] md:min-h-[100svh]  select-none">
         {media && typeof media === 'object' && (
           <Media fill imgClassName="-z-10 object-cover " priority resource={media} />
         )}
