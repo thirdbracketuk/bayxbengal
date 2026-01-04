@@ -28,7 +28,7 @@ export const NeutralHighImpactHero: React.FC<Page['hero']> = ({ links, media, ri
       </div>
 
       {/* Media layer */}
-      <div className="min-h-[80svh] md:min-h-[100svh]  select-none">
+      <div className="min-h-[80svh]   select-none">
         {media && typeof media === 'object' && (
           <Media fill imgClassName="-z-10 object-cover " priority resource={media} />
         )}
