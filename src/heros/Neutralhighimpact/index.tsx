@@ -30,7 +30,7 @@ export const NeutralHighImpactHero: React.FC<Page['hero']> = ({ links, media, ri
       {/* Media layer */}
       <div className="min-h-[80vh] md:min-h-[100vh]  select-none">
         {media && typeof media === 'object' && (
-          <Media fill imgClassName="-z-10 object-cover pb-16" priority resource={media} />
+          <Media fill imgClassName="-z-10 object-cover " priority resource={media} />
         )}
       </div>
     </div>
