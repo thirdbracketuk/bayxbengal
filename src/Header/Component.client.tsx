@@ -56,7 +56,7 @@ export const HeaderClient: React.FC<HeaderClientProps> = ({ data }) => {
     >
       <Navbar
         theme={{
-          background: 'bg-transparent',
+          background: 'bg-background',
           mobileMenu: 'bg-background',
         }}
       >
