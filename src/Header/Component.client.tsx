@@ -50,13 +50,10 @@ export const HeaderClient: React.FC<HeaderClientProps> = ({ data }) => {
     //     <HeaderNav data={data} />
     //   </div>
     // </header>
-    <header
-      className="container relative z-20  bg-transparent "
-      {...(theme ? { 'data-theme': theme } : {})}
-    >
+    <header className="container relative z-20   " {...(theme ? { 'data-theme': theme } : {})}>
       <Navbar
         theme={{
-          background: 'bg-background',
+          background: 'bg-transparent',
           mobileMenu: 'bg-background',
         }}
       >
