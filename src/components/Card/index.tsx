@@ -37,7 +37,7 @@ export const Card: React.FC<{
       )}
       ref={card.ref}
     >
-      <div className="relative w-full bg-gradient-to-r from-rose-600 via-purple-500 to-sky-500">
+      <div className="relative w-full bg-gradient-to-r from-accent  to-card">
         {!metaImage && <div className="">No image</div>}
         {metaImage && typeof metaImage !== 'string' && <Media resource={metaImage} size="33vw" />}
       </div>
